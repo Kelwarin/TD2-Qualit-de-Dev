@@ -1,4 +1,4 @@
-package IdGenerator;
+package Exercice1;
 
 public class IdGenerator{
     private int id;

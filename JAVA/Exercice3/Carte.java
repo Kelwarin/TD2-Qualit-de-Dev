@@ -1,4 +1,4 @@
-package Banque;
+package Exercice3;
 
 public abstract class Carte {
     protected String type;

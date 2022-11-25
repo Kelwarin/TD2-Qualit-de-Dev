@@ -1,4 +1,4 @@
-package IdGenerator;
+package Exercice1;
 
 public class TestIdGenerator {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Banque;
+package Exercice3;
 
 public interface Modele{
     Carte attribuerCarteCredit(Client client);

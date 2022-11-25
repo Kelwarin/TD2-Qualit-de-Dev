@@ -1,4 +1,4 @@
-package Banque;
+package Exercice3;
 
 public class Banque {
     private String nomBanque;

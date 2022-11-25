@@ -1,4 +1,4 @@
-package Etudiant;
+package Exercice4;
 
 public class Etudiant {
 

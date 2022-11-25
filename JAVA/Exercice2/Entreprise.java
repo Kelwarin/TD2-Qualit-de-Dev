@@ -1,4 +1,4 @@
-package Imprimante;
+package Exercice2;
 
 public class Entreprise {
     private Imprimante imprimante;

@@ -1,4 +1,4 @@
-package Banque;
+package Exercice3;
 
 public class Visa implements Modele{
     public Carte attribuerCarteCredit(Client client){

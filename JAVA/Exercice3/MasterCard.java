@@ -1,4 +1,4 @@
-package Banque;
+package Exercice3;
 
 public class MasterCard implements Modele{
     public Carte attribuerCarteCredit(Client client){
