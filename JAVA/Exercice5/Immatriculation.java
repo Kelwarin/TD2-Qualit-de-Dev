@@ -8,15 +8,11 @@ public class Immatriculation {
         this.immatriculation = "";
     }
 
-    public static Immatriculation getInstance(){
-        if(single_instance == null){
+    public static Immatriculation getInstance() {
+        if (single_instance == null) {
             single_instance = new Immatriculation();
         }
         return single_instance;
-    }
-
-    public String getImmatriculation() {
-        return immatriculation;
     }
 
     public String immatriculer(){

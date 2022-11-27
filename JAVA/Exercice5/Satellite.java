@@ -1,6 +1,6 @@
 package Exercice5;
 
-public class Satellite {
+public abstract class Satellite {
     protected String marque;
     protected String modele;
     protected String type;
