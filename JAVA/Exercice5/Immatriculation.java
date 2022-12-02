@@ -5,7 +5,7 @@ public class Immatriculation {
     private static Immatriculation single_instance = null;
 
     private Immatriculation(){
-        this.immatriculation = "";
+        this.immatriculation = immatriculer();
     }
 
     public static Immatriculation getInstance() {
@@ -35,5 +35,10 @@ public class Immatriculation {
         }
         immatriculation = immat;
         return immatriculation;
+    }
+
+    @Override
+    public String toString() {
+        return this.immatriculation;
     }
 }

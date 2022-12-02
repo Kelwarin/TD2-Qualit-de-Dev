@@ -3,56 +3,132 @@ package Exercice5;
 import java.util.ArrayList;
 
 public class TestUsine {
-    public static Avion createAvionA1(Usine usine){
-        Reacteur reacteurA1_1 = new Reacteur("Airbus", 8.3, 1.5);
-        Reacteur reacteurA1_2 = new Reacteur("SpaceX", 7.5, 3);
-        Fuselage fuselageA1 = new Fuselage(22, 850);
-        ArrayList<Reacteur> reacteursA1 = new ArrayList<>();
-        reacteursA1.add(reacteurA1_1);
-        reacteursA1.add(reacteurA1_1);
-        reacteursA1.add(reacteurA1_1);
-        reacteursA1.add(reacteurA1_1);
-        reacteursA1.add(reacteurA1_2);
-        reacteursA1.add(reacteurA1_2);
-        return usine.fabriqueAvion("A380", reacteursA1, fuselageA1);
+    public static Avion createAirbus320_1(Usine usine){
+        Avion avion = usine.fabriqueAvion("320", "Rolls-Royce");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 5, 10);
+        Fuselage fuselage = new Fuselage(30, 120);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
     }
 
-    public static Avion createAvionA2(Usine usine){
-        Reacteur reacteurA2 = new Reacteur("Airbus", 10.2, 2.1);
-        Fuselage fuselageA2 = new Fuselage(11, 268);
-        ArrayList<Reacteur> reacteursA2 = new ArrayList<>();
-        reacteursA2.add(reacteurA2);
-        reacteursA2.add(reacteurA2);
-        reacteursA2.add(reacteurA2);
-        reacteursA2.add(reacteurA2);
-        return usine.fabriqueAvion("A330", reacteursA2, fuselageA2);
+    public static Avion createAirbus320_2(Usine usine){
+        Avion avion = usine.fabriqueAvion("320", "Trent");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 6, 9);
+        Fuselage fuselage = new Fuselage(30, 120);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
     }
 
-    public static Avion createAvionB(Usine usine){
-        Reacteur reacteurB = new Reacteur("Boeing", 16, 2.5);
-        Fuselage fuselageB = new Fuselage(9, 127);
-        ArrayList<Reacteur> reacteursB = new ArrayList<>();
-        reacteursB.add(reacteurB);
-        reacteursB.add(reacteurB);
-        reacteursB.add(reacteurB);
-        reacteursB.add(reacteurB);
-        reacteursB.add(reacteurB);
-        reacteursB.add(reacteurB);
-        return usine.fabriqueAvion("737 MAX 7", reacteursB, fuselageB);
+    public static Avion createAirbus380_1(Usine usine){
+        Avion avion = usine.fabriqueAvion("380", "Rolls-Royce");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 8, 12);
+        Fuselage fuselage = new Fuselage(110, 550);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
+    }
+
+    public static Avion createAirbus380_2(Usine usine){
+        Avion avion = usine.fabriqueAvion("380", "Trent");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 9, 13);
+        Fuselage fuselage = new Fuselage(110, 550);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
+    }
+
+    public static Avion createBoeing737_1(Usine usine){
+        Avion avion = usine.fabriqueAvion("737", "Rolls-Royce");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 4, 8);
+        Fuselage fuselage = new Fuselage(28, 110);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
+    }
+
+    public static Avion createBoeing737_2(Usine usine){
+        Avion avion = usine.fabriqueAvion("737", "Trent");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 7, 9);
+        Fuselage fuselage = new Fuselage(28, 110);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
+    }
+
+    public static Avion createBoeing747_1(Usine usine){
+        Avion avion = usine.fabriqueAvion("747", "Rolls-Royce");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 20, 38);
+        Fuselage fuselage = new Fuselage(100, 375);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
+    }
+
+    public static Avion createBoeing747_2(Usine usine){
+        Avion avion = usine.fabriqueAvion("747", "Trent");
+        Reacteur reacteur = new Reacteur(avion.getMarqueReacteur(), 22, 41);
+        Fuselage fuselage = new Fuselage(100, 375);
+        ArrayList<Reacteur> reacteurs = new ArrayList<>();
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        reacteurs.add(reacteur);
+        avion.setReacteurs(reacteurs);
+        avion.setFuselage(fuselage);
+        return avion;
     }
 
     public static void main(String[] args) {
         Usine usineA = new UsineAirbus();
         Usine usineB = new UsineBoeing();
-        Avion avionA1 = createAvionA1(usineA);
-        Avion avionA2 = createAvionA2(usineA);
-        Avion avionB = createAvionB(usineB);
-        Satellite satelliteA = usineA.fabriqueSatellite("X392");
-        Satellite satelliteB = usineB.fabriqueSatellite("V951");
-        System.out.println(avionA1);
-        System.out.println(avionA2);
-        System.out.println(avionB);
-        System.out.println(satelliteA);
-        System.out.println(satelliteB);
+        Avion avionAirbus320_1 = createAirbus320_1(usineA);
+        Avion avionAirbus320_2 = createAirbus320_2(usineA);
+        Avion avionAirbus380_1 = createAirbus380_1(usineA);
+        Avion avionAirbus380_2 = createAirbus380_2(usineA);
+        Avion avionBoeing737_1 = createBoeing737_1(usineB);
+        Avion avionBoeing737_2 = createBoeing737_2(usineB);
+        Avion avionBoeing747_1 = createBoeing747_1(usineB);
+        Avion avionBoeing747_2 = createBoeing747_2(usineB);
+        Satellite jason1 = usineA.fabriqueSatellite("Jason1");
+        Satellite argos = usineB.fabriqueSatellite("Argos");
+        System.out.println(avionAirbus320_1);
+        System.out.println(avionAirbus320_2);
+        System.out.println(avionAirbus380_1);
+        System.out.println(avionAirbus380_2);
+        System.out.println(avionBoeing737_1);
+        System.out.println(avionBoeing737_2);
+        System.out.println(avionBoeing747_1);
+        System.out.println(avionBoeing747_2);
+        System.out.println(jason1);
+        System.out.println(argos);
     }
 }

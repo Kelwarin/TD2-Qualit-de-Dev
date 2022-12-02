@@ -3,19 +3,17 @@ package Exercice5;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public abstract class Avion {
+public class Avion {
     protected String marque;
     protected String modele;
     protected ArrayList<Reacteur> reacteurs;
     protected Fuselage fuselage;
     protected String immatriculation;
+    protected String marqueReacteur;
 
-    public Avion(String marque, String modele, ArrayList<Reacteur> reacteurs, Fuselage fuselage) {
-        this.marque = marque;
-        this.modele = modele;
-        this.reacteurs = reacteurs;
-        this.fuselage = fuselage;
-        this.immatriculation = Immatriculation.getInstance().immatriculer();
+    public Avion(String modele, String marqueReacteur) {
+        this.marque = modele;
+        this.marqueReacteur = marqueReacteur;
     }
 
     @Override
@@ -31,5 +29,21 @@ public abstract class Avion {
             }
         }
         return str;
+    }
+
+    public void setImmatriculation(String immatriculation) {
+        this.immatriculation = immatriculation;
+    }
+
+    public void setReacteurs(ArrayList<Reacteur> reacteurs) {
+        this.reacteurs = reacteurs;
+    }
+
+    public void setFuselage(Fuselage fuselage) {
+        this.fuselage = fuselage;
+    }
+
+    public String getMarqueReacteur() {
+        return marqueReacteur;
     }
 }

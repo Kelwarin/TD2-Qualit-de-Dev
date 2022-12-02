@@ -1,10 +1,10 @@
 package Exercice5;
 
 public class Fuselage {
-    private double poids;
+    private int poids;
     private int capacite;
 
-    public Fuselage(double poids, int capacite) {
+    public Fuselage(int poids, int capacite) {
         this.poids = poids;
         this.capacite = capacite;
     }

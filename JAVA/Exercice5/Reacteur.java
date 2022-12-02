@@ -2,10 +2,10 @@ package Exercice5;
 
 public class Reacteur {
     private String marque;
-    private double poids;
-    private double poussee;
+    private int poids;
+    private int poussee;
 
-    public Reacteur(String marque, double poids, double poussee){
+    public Reacteur(String marque, int poids, int poussee){
         this.marque = marque;
         this.poids = poids;
         this.poussee = poussee;
